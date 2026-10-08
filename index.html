@@ -155,50 +155,96 @@
         }
 
 
+        /* PROFESSIONAL EXPERIENCE */
+
+        .experience {
+            max-width: 650px;
+            margin: 45px auto 0;
+        }
+
+        .experience .section-title {
+            margin-bottom: 20px;
+        }
+
+        .experience-card {
+            border: 1px solid #ddd;
+            background: #ffffff;
+            padding: 12px 25px;
+            margin-bottom: 12px;
+        }
+
+        .experience-card h2 {
+            font-size: 21px;
+            margin: 0 0 4px;
+        }
+
+        .experience-card h2 a {
+            color: #1f2933;
+            text-decoration: none;
+        }
+
+        .experience-card h2 a:hover {
+            text-decoration: underline;
+        }
+
+        .experience-position {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 3px;
+        }
+
+        .experience-date {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+
         /* ABOUT */
 
-.about {
-    max-width: 760px;
-    margin: 50px auto 0;
-    text-align: center;
-}
+        .about {
+            max-width: 760px;
+            margin: 50px auto 0;
+            text-align: center;
+        }
 
-.about .section-title {
-    margin-bottom: 12px;
-}
+        .about .section-title {
+            margin-bottom: 12px;
+        }
 
-.about p {
-    font-size: 17px;
-    line-height: 1.7;
-    margin: 0 0 16px;
-}
+        .about p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin: 0 0 16px;
+        }
 
 
-/* CONTACT */
+        /* CONTACT */
 
-.contact {
-    margin-top: 30px;
-    padding: 25px 20px;
-    background: #f4f4f4;
-    text-align: center;
-}
+        .contact {
+            margin-top: 30px;
+            padding: 25px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
 
-.contact h2 {
-    font-size: 28px;
-    margin: 0 0 12px;
-}
+        .contact h2 {
+            font-size: 28px;
+            margin: 0 0 12px;
+        }
 
-.contact a {
-    color: #333;
-    margin: 0 12px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 14px;
-}
+        .contact a {
+            color: #333;
+            margin: 0 12px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-.contact a:hover {
-    text-decoration: underline;
-}
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
 
         /* FOOTER */
 
@@ -238,6 +284,11 @@
                 height: 160px;
             }
 
+            .section-title {
+                font-size: 24px;
+                letter-spacing: 1px;
+            }
+
             .projects {
                 grid-template-columns: 1fr;
             }
@@ -245,6 +296,19 @@
             .project img {
                 height: auto;
             }
+
+            .experience-card {
+                padding: 12px 15px;
+            }
+
+            .experience-card h2 {
+                font-size: 19px;
+            }
+
+            .experience-position {
+                font-size: 15px;
+            }
+
         }
 
     </style>
@@ -255,276 +319,365 @@
 <body>
 
 
-<!-- HEADER -->
+    <!-- HEADER -->
 
-<header>
+    <header>
 
-    <div class="hero">
+        <div class="hero">
 
-        <div class="hero-text">
+            <div class="hero-text">
 
-            <h1>APU DATTA</h1>
-
-            <p>
-                Business Analytics | FP&A | SAP S/4HANA | Data Analytics
-            </p>
-
-            <p>
-	Finance and business analytics professional combining FP&A and SAP S/4HANA experience
-    	with data analytics and machine learning to support data-driven business decisions.
-            </p>
-
-            <div class="header-links">
-
-                <a href="#projects">
-                    VIEW PROJECTS
-                </a>
-
-                <a href="https://github.com/dattaBus-anls"
-                   target="_blank">
-                    GITHUB
-                </a>
-
-                <a href="https://www.linkedin.com/in/apu-datta-491b8b84/"
-                   target="_blank">
-                    LINKEDIN
-                </a>
-
-<a href="Resume%20Apu%20Datta.pdf"
-   target="_blank">
-    RESUME
-</a>
-
-            </div>
-
-        </div>
-
-
-        <img src="profile.jpg"
-             alt="Apu Datta"
-             class="profile-photo">
-
-    </div>
-
-</header>
-
-
-
-<!-- PROJECTS -->
-
-<div class="container" id="projects">
-
-    <h1 class="section-title">
-        FEATURED PROJECTS
-    </h1>
-
-
-    <div class="projects">
-
-
-        <!-- PROJECT 1 -->
-
-        <div class="project">
-
-            <img src="erp_spend_forecast.png"
-                 alt="ERP Spend Forecasting Project">
-
-            <div class="project-content">
-
-                <h2>
-                    ERP Spend Forecasting
-                </h2>
-
-                <div class="technology">
-                    Python | Machine Learning | Streamlit | FRED API
-                </div>
+                <h1>APU DATTA</h1>
 
                 <p>
-    		Built a machine-learning forecasting pipeline that combines ERP procurement data
-    		with FRED economic indicators to estimate future spending and support procurement
-    		planning and financial decision-making.
-
+                    Business Analytics | FP&A | SAP S/4HANA | Data Analytics
                 </p>
-
-                <a class="project-button"
-                   href="https://erp-spend-forecasting-app-with-app-and-ml-pipeline-p9zrfxmjz44.streamlit.app/"
-                   target="_blank">
-                    LIVE PROJECT
-                </a>
-
-                <a class="project-button"
-                   href="https://github.com/dattaBus-anls/ERP-Spend-Forecasting-app-with-Streamlit-and-ML-pipeline"
-                   target="_blank">
-                    GITHUB
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PROJECT 2 -->
-
-        <div class="project">
-
-            <img src="retail_analytics_platform.png"
-                 alt="Retail Analytics Platform">
-
-            <div class="project-content">
-
-                <h2>
-                    Retail Analytics Platform
-                </h2>
-
-                <div class="technology">
-                    Python | K-Means | Market Basket Analysis | Streamlit
-                </div>
 
                 <p>
-    		Built an interactive retail analytics platform using customer segmentation
-    		and market basket analysis to identify customer groups, purchasing patterns,
-    		and product relationships that support business decision-making.
-
+                    Finance and business analytics professional with 10+ years of experience
+                    in financial planning, forecasting, management reporting, and SAP S/4HANA
+                    implementation, combining financial expertise with data analytics and
+                    machine learning to support data-driven business decisions.
                 </p>
 
-                <a class="project-button"
-                   href="https://retailanalyticsplatform.streamlit.app/"
-                   target="_blank">
-                    LIVE PROJECT
-                </a>
+                <div class="header-links">
 
-                <a class="project-button"
-                   href="https://github.com/dattaBus-anls/-Retail-Analytics-Platform-"
-                   target="_blank">
-                    GITHUB
-                </a>
+                    <a href="#projects">
+                        VIEW PROJECTS
+                    </a>
 
-            </div>
+                    <a href="#experience">
+                        EXPERIENCE
+                    </a>
 
-        </div>
+                    <a href="https://github.com/dattaBus-anls"
+                       target="_blank">
+                        GITHUB
+                    </a>
 
+                    <a href="https://www.linkedin.com/in/apu-datta-491b8b84/"
+                       target="_blank">
+                        LINKEDIN
+                    </a>
 
+                    <a href="Resume%20Apu%20Datta.pdf"
+                       target="_blank">
+                        RESUME
+                    </a>
 
-        <!-- PROJECT 3 -->
-
-        <div class="project">
-
-            <img src="nightlife-project.png"
-                 alt="NYC Nightlife Analytics">
-
-            <div class="project-content">
-
-                <h2>
-                    NYC Nightlife Analytics
-                </h2>
-
-                <div class="technology">
-                    R | ggplot2 | Quarto | Data Visualization
                 </div>
 
-                <p>
-    		Analyzed NYC nighttime mobility using Yellow Taxi, rideshare, and Yelp nightlife
-    		data to compare pre-COVID, during-COVID, and post-COVID patterns and identify
-    		changes in travel behavior, nightlife hotspots, and nighttime recovery.
-                </p>
-
-                <a class="project-button"
-                   href="https://dattabus-anls.github.io/STA9750-2025-FALL/Nightlife_Analytics/quarto/Nightlife_Analytics_covid.html"
-                   target="_blank">
-                    VIEW PROJECT
-                </a>
-
             </div>
+
+
+            <img src="profile.jpg"
+                 alt="Apu Datta"
+                 class="profile-photo">
 
         </div>
 
-
-
-        <!-- PROJECT 4 -->
-
-        <div class="project">
-
-            <img src="Dream_tours.png"
-                 alt="Dream Tours Hotel Reservation Database">
-
-            <div class="project-content">
-
-                <h2>
-                    Dream Tours – Online Hotel Reservation Database
-                </h2>
-
-                <div class="technology">
-                    SQL | MySQL | Retool | Mockaroo | Database Modeling
-                </div>
-
-                <p>
-		Developed a relational hotel reservation database as a collaborative project,
-    		using MySQL for database design and SQL operations, Mockaroo for test data,
-    		and Retool to build an interactive user interface.
-                </p>
-
-                <a class="project-button" href="dream-tours.html">PROJECT DETAILS
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+    </header>
 
 
 
-    <!-- ABOUT -->
+    <!-- PROJECTS -->
 
-    <div class="about">
+    <div class="container" id="projects">
 
         <h1 class="section-title">
-            ABOUT ME
+            FEATURED PROJECTS
         </h1>
 
-        <p>
-    My professional background combines finance, FP&A, and SAP S/4HANA implementation,
-    with experience in financial planning, forecasting, management reporting,
-    KPI analysis, and ERP-driven business processes.
-        </p>
 
-        <p>
-    I am currently completing my Master of Science in Business Analytics at
-    Baruch College, expanding my expertise in Python, R, SQL, machine learning,
-    and data visualization to support data-driven business decision-making.
-        </p>
+        <div class="projects">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project">
+
+                <img src="erp_spend_forecast.png"
+                     alt="ERP Spend Forecasting Project">
+
+                <div class="project-content">
+
+                    <h2>
+                        ERP Spend Forecasting
+                    </h2>
+
+                    <div class="technology">
+                        Python | Machine Learning | Streamlit | FRED API
+                    </div>
+
+                    <p>
+                        Built a machine-learning forecasting pipeline that combines ERP procurement data
+                        with FRED economic indicators to estimate future spending and support procurement
+                        planning and financial decision-making.
+                    </p>
+
+                    <a class="project-button"
+                       href="https://erp-spend-forecasting-app-with-app-and-ml-pipeline-p9zrfxmjz44.streamlit.app/"
+                       target="_blank">
+                        LIVE PROJECT
+                    </a>
+
+                    <a class="project-button"
+                       href="https://github.com/dattaBus-anls/ERP-Spend-Forecasting-app-with-Streamlit-and-ML-pipeline"
+                       target="_blank">
+                        GITHUB
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project">
+
+                <img src="retail_analytics_platform.png"
+                     alt="Retail Analytics Platform">
+
+                <div class="project-content">
+
+                    <h2>
+                        Retail Analytics Platform
+                    </h2>
+
+                    <div class="technology">
+                        Python | K-Means | Market Basket Analysis | Streamlit
+                    </div>
+
+                    <p>
+                        Built an interactive retail analytics platform using customer segmentation
+                        and market basket analysis to identify customer groups, purchasing patterns,
+                        and product relationships that support business decision-making.
+                    </p>
+
+                    <a class="project-button"
+                       href="https://retailanalyticsplatform.streamlit.app/"
+                       target="_blank">
+                        LIVE PROJECT
+                    </a>
+
+                    <a class="project-button"
+                       href="https://github.com/dattaBus-anls/-Retail-Analytics-Platform-"
+                       target="_blank">
+                        GITHUB
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project">
+
+                <img src="nightlife-project.png"
+                     alt="NYC Nightlife Analytics">
+
+                <div class="project-content">
+
+                    <h2>
+                        NYC Nightlife Analytics
+                    </h2>
+
+                    <div class="technology">
+                        R | ggplot2 | Quarto | Data Visualization
+                    </div>
+
+                    <p>
+                        Analyzed NYC nighttime mobility using Yellow Taxi, rideshare, and Yelp nightlife
+                        data to compare pre-COVID, during-COVID, and post-COVID patterns and identify
+                        changes in travel behavior, nightlife hotspots, and nighttime recovery.
+                    </p>
+
+                    <a class="project-button"
+                       href="https://dattabus-anls.github.io/STA9750-2025-FALL/Nightlife_Analytics/quarto/Nightlife_Analytics_covid.html"
+                       target="_blank">
+                        VIEW PROJECT
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project">
+
+                <img src="Dream_tours.png"
+                     alt="Dream Tours Hotel Reservation Database">
+
+                <div class="project-content">
+
+                    <h2>
+                        Dream Tours – Online Hotel Reservation Database
+                    </h2>
+
+                    <div class="technology">
+                        SQL | MySQL | Retool | Mockaroo | Database Modeling
+                    </div>
+
+                    <p>
+                        Developed a relational hotel reservation database as a collaborative project,
+                        using MySQL for database design and SQL operations, Mockaroo for test data,
+                        and Retool to build an interactive user interface.
+                    </p>
+
+                    <a class="project-button"
+                       href="dream-tours.html">
+                        PROJECT DETAILS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+
+        <div class="experience" id="experience">
+
+            <h1 class="section-title">
+                PROFESSIONAL EXPERIENCE
+            </h1>
+
+
+            <!-- EPIC GROUP -->
+
+            <div class="experience-card">
+
+                <h2>
+                    <a href="https://www.epicgroup.global/corpinfo25v1/"
+                       target="_blank">
+                        Epic Group
+                    </a>
+                </h2>
+
+                <p class="experience-position">
+                    Assistant General Manager – Financial Planning Analyst
+                </p>
+
+                <p class="experience-date">
+                    March 2019 – December 2024 | 5 years, 10 months
+                </p>
+
+            </div>
+
+
+
+            <!-- DESHBANDHU GROUP -->
+
+            <div class="experience-card">
+
+                <h2>
+                    <a href="https://www.dbg.com.bd/"
+                       target="_blank">
+                        Deshbandhu Group Limited
+                    </a>
+                </h2>
+
+                <p class="experience-position">
+                    Manager Accounts, Project Manager – SAP S/4HANA
+                </p>
+
+                <p class="experience-date">
+                    July 2017 – February 2019 | 1 year, 8 months
+                </p>
+
+            </div>
+
+
+
+            <!-- VIYELLATEX GROUP -->
+
+            <div class="experience-card">
+
+                <h2>
+                    <a href="https://www.viyellatexgroup.com/"
+                       target="_blank">
+                        VIYELLATEX Group
+                    </a>
+                </h2>
+
+                <p class="experience-position">
+                    Executive, Corporate Group Finance
+                </p>
+
+                <p class="experience-date">
+                    November 2014 – June 2017 | 2 years, 8 months
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ABOUT -->
+
+        <div class="about">
+
+            <h1 class="section-title">
+                ABOUT ME
+            </h1>
+
+            <p>
+                My professional background combines finance, FP&A, and SAP S/4HANA implementation,
+                with experience in financial planning, forecasting, management reporting,
+                KPI analysis, and ERP-driven business processes.
+            </p>
+
+            <p>
+                I am currently completing my Master of Science in Business Analytics at
+                Baruch College, expanding my expertise in Python, R, SQL, machine learning,
+                and data visualization to support data-driven business decision-making.
+            </p>
+
+        </div>
 
     </div>
 
-</div>
 
-<!-- CONTACT -->
 
-<div class="contact">
+    <!-- CONTACT -->
 
-    <h2>LET'S CONNECT</h2>
+    <div class="contact">
 
-    <div class="contact-emails">
+        <h2>LET'S CONNECT</h2>
 
-<a href="mailto:uda.mr.iub@gmail.com">
-    PERSONAL EMAIL
-</a>
+        <div class="contact-emails">
 
-<a href="mailto:apu.datta05@stu-mail.baruch.cuny.edu">
-    BARUCH EMAIL
-</a>
+            <a href="mailto:uda.mr.iub@gmail.com">
+                PERSONAL EMAIL
+            </a>
+
+            <a href="mailto:apu.datta05@stu-mail.baruch.cuny.edu">
+                BARUCH EMAIL
+            </a>
+
+        </div>
 
     </div>
 
-</div>
 
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
-<footer>
-    © 2026 Apu Datta
-</footer>
+    <footer>
+        © 2026 Apu Datta
+    </footer>
 
 
 </body>
